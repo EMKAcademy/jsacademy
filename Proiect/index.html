@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Number Guessing</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Number Guessing</h1>
+    
+    <form class="form-group text-center" id="game">
+      <fieldset>
+        <legend>Can you guess my number?</legend>
+        <input type="text" class="form-control d-flex justify-content-center" id="user-number" autocomplete="off"><hr>
+        <input type="submit" value="Am ghicit!" class="btn-success col-3">   
+         <input type="reset" value="New Game" class="btn-danger col-3"><hr>
+      </fieldset>
+    </form>
+    <form class="form-group text-center" id="options">
+      <fieldset>
+          <legend>Options</legend>
+          <label for="difficulty">Difficulty</label>
+          <select name="difficulty" class="form-control col-3" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Normal</option>
+            <option value="hard">Hard</option>
+          </select>
+          <input type="submit" class="btn-info col-3" value="Accept">
+        </fieldset>
+  </form>
+  <p class="usedNumbers">Numere incercate: <span id="usedNumbers"></span></p>
+  <div id="timebar"></div>
+  </div>
+
+
+
+
+  <script src="js/app.js"></script>
+</body>
+</html>
